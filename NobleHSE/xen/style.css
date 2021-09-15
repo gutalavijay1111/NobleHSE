@@ -1,0 +1,262 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 97px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 5;
+}
+header img {
+  position: absolute;
+  width: 229px;
+  height: 78px;
+  left: 68px;
+  top: 9px;
+}
+nav {
+  position: absolute;
+  height: 25px;
+  left: 576px;
+  top: 36px;
+}
+nav a {
+  font-family: Open Sans;
+  margin-left: 45px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #000;
+}
+.contact-us {
+  padding: 10px;
+  background-color: #bd0000;
+  color: white;
+}
+
+/* search */
+p {
+  position: absolute;
+  width: 266px;
+  height: 38px;
+  left: 352px;
+  top: 145px;
+
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+
+  color: rgba(0, 0, 0, 0.8);
+}
+.rb {
+  position: absolute;
+  left: 100px;
+  top: 82px;
+
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  color: rgba(0, 0, 0, 0.8);
+}
+.sub-cat {
+  position: absolute;
+  width: 332px;
+  height: 639px;
+  left: -5px;
+  top: 97px;
+  background: rgba(232, 232, 232, 0.6);
+}
+
+.sub-category {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 126px;
+  margin-left: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.sub-category div {
+  margin: 8px 0px;
+}
+
+input[type="checkbox"]{
+    height: 21px;
+    width: 21px;
+    vertical-align: -5px;
+    outline: 1px solid black;
+}
+
+/* grids */
+.grid-make {
+  position: absolute;
+  top: 252px;
+  left: 352px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 115px 0px;
+}
+.item {
+  margin: 8px;
+  width: 232px;
+  height: 196px;
+  background: #c4c4c4;
+  overflow: hidden;
+}
+.item img{
+  width: 232px;
+  height: 196px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.item img:hover{
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+}
+
+.grid2 {
+  position: absolute;
+  left: 354px;
+  top: 1643px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 70px;
+}
+.pic2 {
+  width: 280px;
+  height: 197px;
+  background: #c4c4c4;
+}
+
+/* footer */
+
+.footer {
+  font-family: sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 492px;
+  left: 0px;
+  top: 2154px;
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+.f_container {
+  margin: 11px;
+  height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.c_details {
+  /* margin-top: 200px; */
+  padding: 20px;
+  height: 410px;
+}
+.c_details img {
+  /* position: absolute; */
+  width: 175px;
+  height: 58px;
+  left: 100px;
+  top: 2219px;
+}
+.c_details h4 {
+  margin-top: 41px;
+  margin-bottom: 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+.c_buttons {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 50px 0px; */
+  margin-top: 54px;
+}
+.c_btn {
+  background-color: rgb(71, 71, 71);
+  border: 1px solid white;
+  color: white;
+  padding: 10px 15px;
+  font-size: large;
+  font-weight: 300;
+}
+.red-btn {
+  background-color: rgb(189, 0, 0);
+  color: white;
+  padding: 10px 15px;
+  font-size: large;
+  font-weight: 500;
+  border: none;
+}
+.s_links {
+  margin-top: 30px;
+  display: flex;
+  /* justify-content: space-around; */
+  margin-right: 1px;
+}
+.s_links i {
+  padding-right: 50px;
+}
+/*
+  for border 
+  
+  .fab{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  */
+
+.quick-links {
+  /* margin-top: 101px; */
+  /* padding: 20px; */
+  height: 300px;
+}
+
+.quick-links > ul {
+  list-style: none;
+}
+.quick-links ul li:before {
+  content: "\00BB";
+}
+.quick-links ul > li {
+  margin: 30px 80px 10px -40px;
+}
+.quick-links ul li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.productsAndServices {
+  /* margin-top: 101px; */
+  /* padding: 20px; */
+  height: 300px;
+}
+.productsAndServices ul > li {
+  list-style: none;
+  margin: 30px 80px 10px -40px;
+}
+.productsAndServices ul li > a {
+  text-decoration: none;
+  color: white;
+}
